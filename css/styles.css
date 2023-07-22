@@ -53,6 +53,9 @@ address {
 }
 
 .page-header {
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid var(--accent);
 }
 
@@ -284,6 +287,9 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.tool-text {
+  margin-top: 8px;
+}
 
 .tool-item-text {
   color: var(--text);
@@ -298,6 +304,8 @@ address {
 .section-title-works {
   display: flex;
   flex-direction: column;
+  width: 264px;
+  height: 112px;
 }
 .section-title {
   text-align: center;
