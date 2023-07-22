@@ -376,6 +376,10 @@ address {
   border-radius: 100%;
 }
 
+.team-social-media:hover,
+.team-social-media:focus {
+  background-color: var(--pressed-state);
+}
 .team-social-media-icon {
   width: 16px;
   height: 16px;
@@ -471,8 +475,17 @@ address {
   border-top: none;
 }
 
+.project-card-link:hover,
+.project-card-link:focus {
+  border: 1px solid var(--accent);
+  background: var(--white-background);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+/* Footer */
 .page-footer {
-  /* Footer */
+  max-width: 1440px;
   margin: 0 auto;
   padding: 100px 0;
   background-color: var(--dark);
@@ -488,4 +501,56 @@ address {
   letter-spacing: 0.02em;
   background-color: var(--dark);
   color: var(--light);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-logo-block {
+  display: inline-block;
+  max-width: 264px;
+  margin-right: 120px;
+}
+
+.social-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+  color: var(--white-background);
+}
+
+.footer-media-block {
+  display: inline-block;
+  max-width: 208px;
+}
+.social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: var(--primary-brand);
+  border-radius: 100%;
+}
+
+.social-media:hover,
+.social-media:focus {
+  background-color: var(--pressed-state);
+}
+
+.social-media-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--light);
 }
