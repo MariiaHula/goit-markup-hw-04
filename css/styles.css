@@ -381,6 +381,60 @@ address {
   height: 16px;
   fill: var(--light);
 }
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 120px 0;
+}
+
+.customers-logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+  gap: 24px;
+}
+
+.customers-logo-icons {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--subtle-text);
+}
+
+.customers-icons {
+  width: 104px;
+  height: 56px;
+  fill: var(--subtle-text);
+}
+
+/* спитати ментора про одночасну активацію при ховері та фокусі */
+/* .customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers-list:hover,
+ {
+  border: 1px solid var(--pressed-state);
+  fill: var(--pressed-state);
+} */
+
+.customers-logo-icons:hover,
+.customers-logo-icons:focus {
+  border: 1px solid var(--pressed-state);
+}
+
+.customers-icons:hover,
+.customers-icons:focus {
+  fill: var(--pressed-state);
+}
+
 /* Portfolio page styles */
 
 .portfolio {
