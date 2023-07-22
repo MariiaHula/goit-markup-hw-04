@@ -141,12 +141,13 @@ address {
 /* Hero section */
 .hero {
   padding: 188px 0;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: var(--dark);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/main-photo/people-office-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,6 +241,7 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Second sections styles */
 
 .hidden-title {
@@ -261,7 +263,18 @@ address {
 .tool-items-function:last-child {
   margin-right: 0;
 }
-
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 264px;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+}
+.feature-icon {
+  width: 64px;
+  height: 64px;
+}
 .tool-item {
   margin-bottom: 8px;
   color: var(--dark);
@@ -313,14 +326,17 @@ address {
 .section-title-list:last-child {
   margin-right: 0;
 }
-.section-title-teams {
+.section-team {
   display: flex;
   flex-direction: column;
-}
-.section-team {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 120px 0;
   background-color: var(--light);
 }
+
 .card-team {
   display: flex;
   flex-direction: column;
@@ -340,6 +356,31 @@ address {
   padding: 32px 0;
 }
 
+.team-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.team-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-brand);
+  border-radius: 100%;
+}
+
+.team-social-media-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--light);
+}
 /* Portfolio page styles */
 
 .portfolio {
