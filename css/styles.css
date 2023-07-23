@@ -428,24 +428,13 @@ address {
   border-color: var(--pressed-state);
 }
 .customers-icons {
-  fill: var(--subtle-text);
+  fill: currentColor;
 }
 .customers-icons:hover,
 .customers-icons:focus {
   fill: var(--pressed-state);
 }
 
-/* спитати ментора про одночасну активацію при ховері та фокусі */
-/* .customers-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.customers-list:hover,
- {
-  border: 1px solid var(--pressed-state);
-  fill: var(--pressed-state);
-} */
 
 /* Portfolio page styles */
 
