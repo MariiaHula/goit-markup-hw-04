@@ -270,14 +270,12 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
   border-radius: 4px;
   background: var(--cloud, #f4f4fd);
 }
-.feature-icon {
-  width: 64px;
-  height: 64px;
-}
+
 .tool-item {
   margin-bottom: 8px;
   color: var(--dark);
@@ -304,8 +302,6 @@ address {
 .section-title-works {
   display: flex;
   flex-direction: column;
-  width: 264px;
-  height: 112px;
 }
 .section-title {
   text-align: center;
@@ -366,7 +362,6 @@ address {
 
 .team-media {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 0 auto;
   list-style: none;
@@ -374,14 +369,18 @@ address {
   margin-top: 8px;
 }
 
+.team-media-list {
+  width: 40px;
+  height: 40px;
+}
 .team-social-media {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-brand);
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .team-social-media:hover,
@@ -389,8 +388,6 @@ address {
   background-color: var(--pressed-state);
 }
 .team-social-media-icon {
-  width: 16px;
-  height: 16px;
   fill: var(--light);
 }
 
@@ -411,18 +408,31 @@ address {
   margin-top: 72px;
   gap: 24px;
 }
-
+.customers-list {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
 .customers-logo-icons {
-  display: inline-block;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--subtle-text);
   border-radius: 4px;
   border: 1px solid var(--subtle-text);
 }
-
+.customers-logo-icons:hover,
+.customers-logo-icons:focus {
+  color: var(--pressed-state);
+  border-color: var(--pressed-state);
+}
 .customers-icons {
-  width: 104px;
-  height: 56px;
   fill: var(--subtle-text);
+}
+.customers-icons:hover,
+.customers-icons:focus {
+  fill: var(--pressed-state);
 }
 
 /* спитати ментора про одночасну активацію при ховері та фокусі */
@@ -436,16 +446,6 @@ address {
   border: 1px solid var(--pressed-state);
   fill: var(--pressed-state);
 } */
-
-.customers-logo-icons:hover,
-.customers-logo-icons:focus {
-  border: 1px solid var(--pressed-state);
-}
-
-.customers-icons:hover,
-.customers-icons:focus {
-  fill: var(--pressed-state);
-}
 
 /* Portfolio page styles */
 
@@ -464,33 +464,37 @@ address {
   flex-wrap: wrap;
 }
 
-.project-card {
+.project-card-list {
   display: flex;
   flex-direction: column;
   margin-right: 24px;
   margin-bottom: 48px;
 }
-.project-card:nth-child(3n + 3) {
+.project-card-list:nth-child(3n + 3) {
   margin-right: 0;
 }
-.project-card:nth-last-child(-n + 3) {
+.project-card-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
-.project-card-link {
-  padding: 32px 16px;
-  border: 1px solid var(--accent);
-  border-top: none;
+.project-card {
+  display: block;
+  max-width: 360px;
 }
-
-.project-card-link:hover,
-.project-card-link:focus {
+.project-card:hover,
+.project-card:focus {
   border: 1px solid var(--accent);
   background: var(--white-background);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+.project-card-text {
+  padding: 32px 16px;
+  border: 1px solid var(--accent);
+  border-top: none;
+}
+
 /* Footer */
 .page-footer {
   max-width: 1440px;
@@ -513,48 +517,53 @@ address {
 
 .footer-container {
   display: flex;
-  justify-content: flex-start;
+  align-items: baseline;
 }
 .footer-logo-block {
   display: inline-block;
   max-width: 264px;
   margin-right: 120px;
 }
-
+.footer-media-block {
+  display: inline-block;
+  max-width: 208px;
+}
 .social-text {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
   color: var(--white-background);
 }
 
-.footer-media-block {
-  display: inline-block;
-  max-width: 208px;
-}
 .social-media-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
 }
+
+.footer-social-media {
+  width: 40px;
+  height: 40px;
+}
+
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   padding: 8px;
   background-color: var(--primary-brand);
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .social-media:hover,
 .social-media:focus {
-  background-color: var(--pressed-state);
+  background-color: var(--success);
 }
 
 .social-media-icon {
