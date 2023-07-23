@@ -430,10 +430,6 @@ address {
 .customers-icons {
   fill: currentColor;
 }
-.customers-icons:hover,
-.customers-icons:focus {
-  fill: var(--pressed-state);
-}
 
 
 /* Portfolio page styles */
@@ -512,6 +508,7 @@ address {
   display: inline-block;
   max-width: 264px;
   margin-right: 120px;
+  
 }
 .footer-media-block {
   display: inline-block;
